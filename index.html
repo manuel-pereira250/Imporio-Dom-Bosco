@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado | Oficial</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8602b16f77.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="imagem/tangirina.png" alt="Icone Tangerina">
+
+        <h1>EMPÓRIO DOM BOSCO</h1>
+
+        <nav class="navbar">
+
+            <!--Criamos nossas Listas quando tiver em formato Desktop-->
+            <ul class="nav-links">
+
+                <li class="item-menu-header">
+                    <a href="index.html">HOME</a>
+                </li>
+
+                <li class="item-menu-header">
+                    <a href="#featured-products">PRODUTOS</a>
+                </li>
+
+                <li class="item-menu-header">
+                    <a href="#contatos">CONTATO</a>
+                </li>
+
+                <li class="item-menu-header">
+                    <a href="#sobre-nos">SOBRE NÓS</a>
+                </li>
+
+
+            </ul>
+
+
+
+
+
+            <!--Criamos nossa caixa (DIV) para guardar os elementos do hamburguer quando estiver aberto-->
+            <div class="mobile-menu" id="mobileMenu">
+
+                <!--Botão para ser utilizado para fechamento da  lista-->
+                <button id="closeButton" class="close">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <!--Essa lista é do Menu Hamburguer quando estiver aberto.-->
+                <ul class="nav-links-mobile">
+
+                    <li>
+                        <a href="">TESTE</a>
+                    </li>
+
+                    <li>
+                        <a href="">TESTE</a>
+                    </li>
+
+                    <li>
+                        <a href="">TESTE</a>
+                    </li>
+                </ul>
+    
+                <div id="btn-mobile" class="cad-mobile">
+                    <button>
+                        <a href="form.html" target="_blank">
+
+                        <!-- <img src="img/user.png" alt="">-->
+                         <p>Cadastre-se</p>
+                        </a>
+                    </button>
+                </div>
+                <!--Fim da caixa do Menu Hamburguer (Quando estiver aberto)-->
+            </div>
+            
+
+
+            <!--Botão de Hamburguer, ele está fora da Div justamente por ser um elemento singular-->
+            <button class="hamburger" id="hamburguerButton">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!--fim do Menu de Navegação-->
+        </nav>
+
+
+
+
+        <div id="btn-header">
+            <button>
+                <a href="form.html" target="_blank">
+
+                    <img src="imagem/user.png" alt="">
+
+                    <p>Cadastre-se</p>
+                </a>
+            </button>
+        </div>
+
+    </header>
+    
+
+
+    <div class="img-destaque">
+        <div class="img-padaria efeito-img-topo"></div>
+    </div>
+
+    <div class="img-div"></div>
+
+    
+    <main>
+        <section id="clients" class="clientes-efeito">
+
+            <h2>NOSSOS CLIENTES</h2>
+
+            <hr class="line">
+
+
+
+            <ul id="clients-list">
+
+<!--  Primeiro Feedback-->
+                <li class="clients-item">
+                    <img src="imagem/personagem.png" alt="icone personagem" loading="lazy">
+                    <h3>Igor Oliveira</h3>
+                    <p>Ótimos produtos e serviços</p>
+                </li>
+
+
+<!--Terceiro Feedback-->
+                <li class="clients-item">
+                    <img src="imagem/personagemfemi.png" alt="icone personagem" class="img-femi" loading="lazy">
+                    <h3>Isadora Martins</h3>
+                    <p>"Excelente preço"</p>
+                </li>
+
+<!--Terceiro Feedback-->
+                <li class="clients-item">
+                    <img src="imagem/" alt="icone personagem" loading="lazy">
+                    <h3>Samuel Rodrigues de Souza</h3>
+                    <p>"Pães frescos e de ótima qualidade"</p>
+                </li>
+
+            </ul>
+
+        </section>
+
+        <div class="img-div"></div>
+
+
+
+
+        <section id="featured-products" class="principais-produtos">
+            <h2>PRINCIPAIS PRODUTOS</h2>
+            
+<!--DIV pai-->
+            <div class="products">
+
+
+<!--caixa MUFFLIN-->
+                <div>
+                    <img src="imagem/muflin.jpg" alt="icone muflin" class="img-product" loading="lazy" width="400px">
+                    <h4 class="title-products">Mufflin</h4>
+                </div>
+
+
+<!--caixa do croissant-->
+                <div>
+                    <img src="imagem/croissant.jpeg" alt="icone croissant" class="img-product" loading="lazy" width="400px">
+                    <h4 class="title-products">Croissant</h4>
+                </div>
+
+            </div>
+
+
+            <div class="products">
+<!--caixa do bolo-->
+                <div>
+                    <img src="imagem/bolo.jpg" alt="icone de bolo" width="400px">
+                    <h4 class="title-products">Bolos</h4>
+                </div>
+
+
+<!--caixa do Bombom de Chocolate-->
+                <div>
+                    <img src="imagem/bomba-chocolate.jpg" alt="icone de bomba de chocolate" width="400px">
+                    <h4 class="title-products">Bomba de Chocolate</h4>
+                </div>
+
+            </div>
+
+            <div class="products">
+<!--caixa de beirute-->
+                <div>
+                    <img src="imagem/beirute.png" alt="icone de beirute" width="400px">
+                    <h4 class="title-products">Beirute</h4>
+                </div>
+
+<!--pao de metro-->
+                <div>
+                    <img src="imagem/pao-de-metro.jpg" alt="icone de pao de metro" width="400px">
+                    <h4 class="title-products">Pão de metro</h4>
+                </div>
+            </div>
+
+            <a href="products.html">
+                ver tudo
+            </a>
+        </section>
+
+        <section id="sobre-nos">
+
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
