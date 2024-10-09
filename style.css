@@ -1,0 +1,144 @@
+*{       /*Configuração padrões de inicio de um projeto dentro do css*/
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;/**/
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2%;
+    background-color: rgb(56, 49, 49);
+    overflow: hidden;/**/
+}
+
+
+header > h1{  /* Selecionamos aqui a cor da letra do nosso H1 ou seja, do nosso título */
+    color: white;
+    font-size: 45px;
+}
+
+header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alterações*/
+    width: 11rem;
+    height: auto;
+}
+
+
+
+.item-menu-header{/* Nossas li que estão dentro do LIST MENU, onde se encontram os nomes dos itens apresentados no HEADER */
+
+    margin-right: 25px;
+}
+
+
+.item-menu-header > a{ /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO */
+
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+
+.item-menu-header > a:hover{ /* Nossas li que estão dentro do LIST MENU. (a) nossa tag de link que é representada por: HOME/PRODUTOS/CONTATO, e o Hover responsável pela modificação de cor ao passar o cursor em cima.*/
+
+    color: yellow;
+
+    transition: 1s;
+}
+
+
+.navbar{
+
+    color: white;/*cor da letra*/
+
+    display: flex;/*deixar flex e lado a lado*/
+
+    justify-content: space-between;/*Justificando*/
+
+    align-items: center;/*alinhando na vertical*/
+
+    padding: 1rem 1.5rem;/*Prenchimento superior/inferior e esquerda direita*/
+
+    height: 2.6rem;/*altura da navbar*/
+}
+
+
+.nav-links{ /*Aqui estamos estilizando a ul (lista não ordenada*/
+    list-style: none;/*Retirando o estilo de lista*/
+    display: flex;/*Tornando a caixa flexivel,e lado a lado*/
+    margin: 0;/*Zerando os espaços de margem que são habilitados por padrão*/
+    padding: 0;/*Zerando os preenchimento que são habilitados por padrão*/
+}
+
+
+.nav-links li{/*Estilizando nossa LI que está dentro da UL*/
+    padding: 0.8px;/*Preenchimento da LI superior/inferior 0 e laterais em 9px*/
+}
+
+.nav-links a,/* Estamos chamando as duas âncoras para estilização, tanto da Versão Desktop quanto da versão Mobile.*/
+.nav-links-mobile a{
+    color: white;/*cor da letra*/
+    text-decoration: none;/*sem sublinhado*/
+}
+
+.mobile-menu{/*Estilizando da caixa Mobile quando aberta*/
+
+    display: none;/*Display: Nenhum*/
+
+    position: fixed;/*Posição fixa na parte direita da página*/
+
+    top: 0;/*Superior em 0 fazendo a caixa encostar ao topo*/
+
+    right: 0;/*Direita em 0 fazendo a caixa encostar a direita*/
+
+
+
+
+    width: 60%;/*Largura em porcentagem da caixa*/
+
+    height: 100%;/*Altura de 100% da tela*/
+
+    background-color: black;/*cor de fundo*/
+
+    flex-direction: column;/*direção dos itens dentro da caixa*/
+
+    align-items: center;/*Alinhamento na vertical do itens*/
+
+    font-size: 1.8rem;/*tamanho da letra dentro da caixa*/
+}
+
+.nav-links-mobile{ /*Lista não ordenada da versão mobile*/
+
+    display: flex; /*Tornando os itens (LISTAS flexiveis)*/
+
+    flex-direction: column; /*Estamos direcionando o posicionamento dessas listas*/
+
+    text-align: end; /*Alinhando o texto ao centro*/
+
+    gap: 1.2rem; /*Espaço entre as listas*/
+
+    /* width: 0%; Zeramos a largura podendo retirar essa linha para testar Visualização */
+
+    list-style: none; /*Estilo de lista desabilitado*/
+
+    /* padding: 0; Preenchimento zerado, podendo também ser retirado para testes */
+}
+
+.nav-links-mobile li{ /*listas da versão Mobile*/
+
+    border-bottom: 1px solid #787272; /*Borda inferior de cada lista*/
+
+    padding-bottom: 1.2rem; /*Tamanho da borda*/
+}
+
