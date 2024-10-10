@@ -102,9 +102,6 @@ header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alter
 
     right: 0;/*Direita em 0 fazendo a caixa encostar a direita*/
 
-
-
-
     width: 60%;/*Largura em porcentagem da caixa*/
 
     height: 100%;/*Altura de 100% da tela*/
@@ -142,3 +139,25 @@ header > img {  /* Aqui estamos chamando nossa imagem para ser atribuídas alter
     padding-bottom: 1.2rem; /*Tamanho da borda*/
 }
 
+.hamburger,
+.close {  /*Estilizando os botões de abertura e fechamento*/
+    font-size: 24px;  /*Tamanho do elemento*/
+    background: none; /*Removido o background*/
+    border: none;  /*Borda nenhuma*/
+    color: white;  /*Colocando cor na letra*/
+    cursor: pointer;  /*Alterando o cursor*/
+    display: flex;  /*Deixando flex*/
+}
+
+
+.close {
+    margin-top: 20px; /*Espaçamento superior do x*/
+    margin-right: 20px; /*Espaçamento a direita do x*/
+    display: block; /*Formatação da imagem em bloco*/
+    align-self: end; /*Alinhamento do botão*/
+}
+
+
+.flex{  /*Elementos usado no JS*/
+    display: flex;/*Tornando item flexivel e visivel.*/
+}
