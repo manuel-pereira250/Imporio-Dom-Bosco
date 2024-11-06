@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultado</title>
     <link rel="stylesheet" href="estilo.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <header>
